@@ -18,7 +18,6 @@ class BooksTest < ApplicationSystemTestCase
     click_on "Create Book"
 
     assert_text "Book was successfully created"
-    click_on "Back"
   end
 
   test "should update Book" do
@@ -29,12 +28,12 @@ class BooksTest < ApplicationSystemTestCase
     click_on "Update Book"
 
     assert_text "Book was successfully updated"
-    click_on "Back"
   end
 
   test "should destroy Book" do
     visit book_url(@book)
-    click_on "Destroy this book", match: :first
+    click_on "Delete this book", match: :first
+    click_on "Delete this book"
 
     assert_text "Book was successfully destroyed"
   end
