@@ -1,24 +1,12 @@
-# README
+# Book Collection 1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Ruby on Rails CRUD application for managing books.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Add a book
+- View book details
+- Update a book
+- Delete a book with confirmation
+- PostgreSQL database
+- Resourceful Rails routes
