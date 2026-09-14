@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  
   root "books#index"
 
   resources :books do
@@ -7,5 +6,4 @@ Rails.application.routes.draw do
       get :delete
     end
   end
-
 end

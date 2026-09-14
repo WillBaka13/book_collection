@@ -8,10 +8,10 @@ class BooksController < ApplicationController
   end
 
   def create
-    @book = Book.new(book_params) 
-    if @book.save 
+    @book = Book.new(book_params)
+    if @book.save
       redirect_to books_path, notice: "Book was successfully added."
-    else 
+    else
       render :new, status: :unprocessable_entity
     end
   end
@@ -20,7 +20,7 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
   end
 
-  def update 
+  def update
     @book = Book.find(params[:id])
 
     if @book.update(book_params)
@@ -28,7 +28,7 @@ class BooksController < ApplicationController
     else
       render :edit, status: :unprocessable_entity
     end
-  end 
+  end
 
   def show
     @book = Book.find(params[:id])
@@ -50,6 +50,4 @@ class BooksController < ApplicationController
   def book_params
     params.require(:book).permit(:title)
   end
-
-  
 end
