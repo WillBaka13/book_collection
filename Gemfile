@@ -65,6 +65,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "json", "= 2.21.2"
+gem "json", "3.0.2"
 
 gem "rspec-rails", "~> 8.0", groups: [ :development, :test ]
