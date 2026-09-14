@@ -1,0 +1,18 @@
+<h1>Book Collection</h1>
+
+<% if notice %>
+    <p><%= notice %></p>
+<% end %>
+
+<p>
+    <%=link_to "Add Book", new_book_path %>
+</p>
+
+<% @books.each do |book| %>
+    <p>
+        <%= book.title %>
+        <%= link_to "Show", book_path(book) %>
+        <%= link_to "Edit", edit_book_path(book) %>
+        <%= link_to "Delete", delete_book_path(book) %>
+    </p>
+<% end %>
