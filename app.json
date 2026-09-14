@@ -1,0 +1,7 @@
+{
+  "name": "Book Collection",
+  "description": "Ruby on Rails Book Collection application",
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
